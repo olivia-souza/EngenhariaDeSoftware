@@ -1,2 +1,0 @@
-module Cadastro_Quadras {
-}
