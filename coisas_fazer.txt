@@ -9,3 +9,5 @@ dados reserva:
 -horario inicio/fim
 -objeto de usuraio 
 -objeto de quadro
+-tipos e pisos em enum
+-cpf usuario é string
