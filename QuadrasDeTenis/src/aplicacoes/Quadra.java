@@ -2,8 +2,13 @@ package aplicacoes;
 
 public class Quadra {
 	Long id;
-	private String numero, tipo;
+	private Tipo_Quadra tipo;
+	private String numero;
 	private boolean coberta, arquibancada, banco;
+	private double precoReservaPeriodoMinimo(){
+		double x = 2;
+		return x + 2;
+	}
 	public Long getId() {
 		return id;
 	}
@@ -16,10 +21,10 @@ public class Quadra {
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
-	public String getTipo() {
+	public Tipo_Quadra getTipo_Quadras(){
 		return tipo;
 	}
-	public void setTipo(String tipo) {
+	public void setTipo_Quadras(Tipo_Quadra tipo){
 		this.tipo = tipo;
 	}
 	public boolean isCoberta() {

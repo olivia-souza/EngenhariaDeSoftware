@@ -1,4 +1,4 @@
-package recursos;
+/*package recursos;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -14,11 +14,12 @@ public class ConexaoBD {
 		PreparedStatement sql = conexao.prepareStatement("SELECT numero, tenis, coberta FROM quadras");
 		ResultSet resultado = sql.executeQuery();
 		while(resultado.next()) {
-			System.out.printf("%d : %s (%s)", resultado.getInt("numero"), resultado.getBoolean("tenis") ? "Quadra de tênis" : "Quadra de beach tênis", resultado.getBoolean("coberta") ? "coberta" : "descoberta");
+			System.out.printf("%d : %s (%s)", resultado.getInt("numero"), resultado.getBoolean("tenis") ? "Quadra de tï¿½nis" : "Quadra de beach tï¿½nis", resultado.getBoolean("coberta") ? "coberta" : "descoberta");
 		}
-		//Fechar conexão
-		System.out.println("Conexão Criada");
+		//Fechar conexï¿½o
+		System.out.println("Conexï¿½o Criada");
 		conexao.close();
 	}
 
 }
+*/

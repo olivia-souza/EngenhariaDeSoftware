@@ -1,11 +1,11 @@
 package recursos;
 
 public class RecursosSimples {
-	RecursosSimples(){
+	/*RecursosSimples(){
 		
 	}
 	
-	/*void menu(int opcao) {;
+	void menu(int opcao) {;
 	int i=1;
 		while(i<=opcao){
 			if(opcao==i) {
