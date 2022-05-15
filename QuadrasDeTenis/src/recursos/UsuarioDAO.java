@@ -1,25 +1,35 @@
 /*package recursos;
-import java.sql.Connection;
-import java.sql.DriverManager;
+import factory.ConnectionFactory;
+import modelo.Usuario;
+import java.sql.*;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
-public class ConexaoBD {
-	public static void main(String[] args) import java.sql.SQLException;{
-		//Conectar
-		String strConexaoMySQL = "jdbc:mysql://ip_da_maquina_do_bd:5432/nomedobanco";
-		Connection conexao = DriverManager.getConnection(strConexaoMySQL, "usuario", "senha");
-		//Executar
-		PreparedStatement sql = conexao.prepareStatement("SELECT numero, tenis, coberta FROM quadras");
-		ResultSet resultado = sql.executeQuery();
-		while(resultado.next()) {
-			System.out.printf("%d : %s (%s)", resultado.getInt("numero"), resultado.getBoolean("tenis") ? "Quadra de t�nis" : "Quadra de beach t�nis", resultado.getBoolean("coberta") ? "coberta" : "descoberta");
-		}
-		//Fechar conex�o
-		System.out.println("Conex�o Criada");
-		conexao.close();
-	}
-
+public class UsuarioDAO {
+	private Connection connection;
+    Long id;
+    String nome;
+    String cpf;
+    String email;
+    String telefone;
+    
+    public UsuarioDAO(){ 
+        this.connection = new ConexaoBDy().getConnection();
+    } 
+    public void adiciona(Usuario usuario){ 
+        String sql = "INSERT INTO usuario(nome,cpf,email,telefone) VALUES(?,?,?,?)";
+        try { 
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            stmt.setString(1, usuario.getNome());
+            stmt.setString(2, usuario.getCpf());
+            stmt.setString(3, usuario.getEmail());
+            stmt.setString(4, usuario.getTelefone());
+            stmt.execute();
+            stmt.close();
+        } 
+        catch (SQLException u) { 
+            throw new RuntimeException(u);
+        } 
+        
+    } 
 }
 */

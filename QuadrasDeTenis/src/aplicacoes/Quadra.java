@@ -5,10 +5,12 @@ public class Quadra {
 	private Tipo_Quadra tipo;
 	private String numero;
 	private boolean coberta, arquibancada, banco;
+	
 	private double precoReservaPeriodoMinimo(){
 		double x = 2;
 		return x + 2;
 	}
+	
 	public Long getId() {
 		return id;
 	}
