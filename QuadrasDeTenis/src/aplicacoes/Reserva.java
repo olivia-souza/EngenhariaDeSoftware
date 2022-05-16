@@ -31,6 +31,4 @@ public class Reserva extends Agendamento {
     public void setPagamento(Tipo_Pagamento pagamento) {
         this.pagamento = pagamento;
     }
-
-
 }
