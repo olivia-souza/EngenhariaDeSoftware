@@ -1,6 +1,6 @@
 package aplicacoes;
 
-public enum Tipo_Quadra {
+public enum TipoQuadra {
     TENIS_RAPIDA, 
     TENIS_SAIBRO,
     BEACH_TENIS;

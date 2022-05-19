@@ -2,7 +2,7 @@ package aplicacoes;
 
 public class Quadra {
 	Long id;
-	private Tipo_Quadra tipo;
+	private TipoQuadra tipo;
 	private String numero;
 	private boolean coberta, arquibancada, banco;
 	
@@ -23,10 +23,10 @@ public class Quadra {
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
-	public Tipo_Quadra getTipo_Quadras(){
+	public TipoQuadra getTipo_Quadras(){
 		return tipo;
 	}
-	public void setTipo_Quadras(Tipo_Quadra tipo){
+	public void setTipo_Quadras(TipoQuadra tipo){
 		this.tipo = tipo;
 	}
 	public boolean isCoberta() {

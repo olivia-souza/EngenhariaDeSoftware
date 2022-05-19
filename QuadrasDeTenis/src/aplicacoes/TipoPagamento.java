@@ -1,6 +1,6 @@
 package aplicacoes;
 
-public enum Tipo_Pagamento {
+public enum TipoPagamento {
     CREDITO,
     DEBITO,
     DINHEIRO,

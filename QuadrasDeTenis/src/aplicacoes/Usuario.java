@@ -1,9 +1,12 @@
 package aplicacoes;
+import java.time.LocalDate;
 
 public class Usuario {
 	private Long id;
-	private String nome, cpf, email, telefone;
-	private boolean gestorQuadras, gestorUsuarios, relatorios, zelador, desabilitado, bloqueado;
+	private String nome, cpf, email, senha;
+	NivelPermissao nivel_permissao;
+	LocalDate data_criacao;
+	private boolean desabilitado, bloqueado;
 	
 	public Long getId() {
 		return id;
@@ -17,10 +20,10 @@ public class Usuario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCPF() {
+	public String getCpf() {
 		return cpf;
 	}
-	public void setCPF(String cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 	public String getEmail() {
@@ -29,23 +32,23 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getTelefone() {
-		return telefone;
+	public String getSenha() {
+		return senha;
 	}
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
-	public boolean isgestorQuadras(){
-		return gestorQuadras;
+	public NivelPermissao getNivel_permissao() {
+		return nivel_permissao;
 	}
-	public void setgestorQuadras(boolean gestorQuadras){
-		this.gestorQuadras = gestorQuadras;
+	public void setNivel_permissao(NivelPermissao nivel_permissao) {
+		this.nivel_permissao = nivel_permissao;
 	}
-	public boolean isBloqueado() {
-		return bloqueado;
+	public LocalDate getData_criacao() {
+		return data_criacao;
 	}
-	public void setBloqueado(boolean bloqueado) {
-		this.bloqueado = bloqueado;
+	public void setData_criacao(LocalDate data_criacao) {
+		this.data_criacao = data_criacao;
 	}
 	public boolean isDesabilitado() {
 		return desabilitado;
@@ -53,22 +56,12 @@ public class Usuario {
 	public void setDesabilitado(boolean desabilitado) {
 		this.desabilitado = desabilitado;
 	}
-	public boolean isZelador() {
-		return zelador;
+	public boolean isBloqueado() {
+		return bloqueado;
 	}
-	public void setZelador(boolean zelador) {
-		this.zelador = zelador;
+	public void setBloqueado(boolean bloqueado) {
+		this.bloqueado = bloqueado;
 	}
-	public boolean isRelatorios() {
-		return relatorios;
-	}
-	public void setRelatorios(boolean relatorios) {
-		this.relatorios = relatorios;
-	}
-	public boolean isGestorUsuarios() {
-		return gestorUsuarios;
-	}
-	public void setGestorUsuarios(boolean gestorUsuarios) {
-		this.gestorUsuarios = gestorUsuarios;
-	}
+	
+	
 }
