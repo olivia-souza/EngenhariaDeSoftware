@@ -2,11 +2,11 @@ package aplicacoes;
 import java.time.LocalDate;
 
 public class Usuario {
-	private Long id;
-	private String nome, cpf, email, senha;
+	protected Long id;
+	protected String nome, cpf, email, senha;
 	NivelPermissao nivel_permissao;
 	LocalDate data_criacao;
-	private boolean desabilitado, bloqueado;
+	protected boolean desabilitado, bloqueado;
 	
 	public Long getId() {
 		return id;
