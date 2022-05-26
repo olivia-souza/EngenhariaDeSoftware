@@ -1,18 +1,16 @@
 package aplicacoes;
-
+import dominio.*;
 import java.util.Scanner;
 
-public class CadastroUsuario {
-	
-		private static String Nome, cpf, email, senha;
+public class CadastroUsuario extends Usuario {
 		
-		public static void main (String [] args ) {
+		public void main (String [] args ) {
 				Scanner receber = new Scanner (System.in);
 				
 				do{
 				System.out.println("Digite seu nome: ");
-				Nome = receber.nextLine();
-				}while (Nome.length() < 4 || Nome.length() > 50 );	
+				nome = receber.nextLine();
+				}while (nome.length() < 4 || nome.length() > 50 );	
 				
 				do{
 				System.out.println("Digite seu cpf: ");

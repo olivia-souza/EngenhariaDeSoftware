@@ -1,5 +1,4 @@
-package aplicacoes;
-
+package dominio;
 import java.time.LocalTime;
 
 public class Reserva extends Agendamento {

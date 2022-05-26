@@ -1,4 +1,4 @@
-package aplicacoes;
+package dominio;
 import java.time.LocalDate;
 
 public class Usuario {

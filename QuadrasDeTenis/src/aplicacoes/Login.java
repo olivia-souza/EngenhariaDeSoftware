@@ -2,6 +2,7 @@ package aplicacoes;
 import java.sql.*;
 import java.util.*;
 import recursos.ConexaoBD;
+import dominio.*;
 
 public class Login extends Usuario {
 	Scanner entrada = new Scanner(System.in);

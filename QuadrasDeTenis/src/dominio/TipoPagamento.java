@@ -1,4 +1,4 @@
-package aplicacoes;
+package dominio;
 
 public enum TipoPagamento {
     CREDITO,

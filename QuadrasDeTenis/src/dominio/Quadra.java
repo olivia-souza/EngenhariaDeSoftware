@@ -1,4 +1,4 @@
-package aplicacoes;
+package dominio;
 
 public class Quadra {
 	Long id;
@@ -48,3 +48,4 @@ public class Quadra {
 		this.banco = banco;
 	}
 }
+
