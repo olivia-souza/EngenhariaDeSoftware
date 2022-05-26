@@ -1,15 +1,11 @@
 package aplicacoes;
-import java.sql.*;
+import java.sql.SQLException;
 import java.util.*;
-import recursos.ConexaoBD;
+import recursos.*;
 import dominio.*;
 
 public class Login extends Usuario {
 	Scanner entrada = new Scanner(System.in);
-	
-	public Login() {
-		
-	}
 	
 	public void recebeDados() {
 		System.out.println("Login");
@@ -17,20 +13,17 @@ public class Login extends Usuario {
 		nome = entrada.next();
 		System.out.println("Senha: ");
 		senha = entrada.next();
-	}
-	
-	private static final String LOGIN_SQL = "SELECT nome FROM usuario WHERE nome = ?";
-	
-	public boolean verificaDados(String login) throws SQLException{
-		PreparedStatement st = null;
-		try	(
-			Connection c = ConexaoBD.getConnection();
-			PreparedStatement ps = c.prepareStatement(LOGIN_SQL)
-		){
-			ps.setString(1, login);
-			try (ResultSet rs = st.executeQuery()){
-				return rs.next();
-			}
+		
+		Usuario usuario = null;
+		try {
+			usuario = new LoginDAO().login("fulano","senha123");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		if(usuario == null) {
+			System.out.println("Usuário não existente ou dados incorretos");
 		}
 	}
+	
 }

@@ -5,6 +5,7 @@ public class Quadra {
 	private TipoQuadra tipo;
 	private String numero;
 	private boolean coberta, arquibancada, banco;
+	private boolean bloqueada, desabilitada, reservada;
 	
 	private double precoReservaPeriodoMinimo(){
 		double x = 2;
@@ -47,5 +48,24 @@ public class Quadra {
 	public void setBanco(boolean banco) {
 		this.banco = banco;
 	}
+	public boolean isBloqueada() {
+		return bloqueada;
+	}
+	public void setBloqueada(boolean bloqueada) {
+		this.bloqueada = bloqueada;
+	}
+	public boolean isDesabilitada() {
+		return desabilitada;
+	}
+	public void setDesabilitada(boolean desabilitada) {
+		this.desabilitada = desabilitada;
+	}
+	public boolean isReservada() {
+		return reservada;
+	}
+	public void setReservada(boolean reservada) {
+		this.reservada = reservada;
+	}
+	
 }
 

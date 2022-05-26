@@ -3,7 +3,7 @@ import java.time.LocalDate;
 
 public class Usuario {
 	protected Long id;
-	protected String nome, cpf, email, senha;
+	protected String nome, email, cpf, senha;
 	NivelPermissao nivel_permissao;
 	LocalDate data_criacao;
 	protected boolean desabilitado, bloqueado;
@@ -20,17 +20,17 @@ public class Usuario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCpf() {
-		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
 	public String getEmail() {
 		return email;
 	}
-	public void setEmail(String email) {
+	public void  setEmail(String email) {
 		this.email = email;
+	}
+	public String getCPF() {
+		return cpf;
+	}
+	public void setCPF(String cpf) {
+		this.cpf = cpf;
 	}
 	public String getSenha() {
 		return senha;
