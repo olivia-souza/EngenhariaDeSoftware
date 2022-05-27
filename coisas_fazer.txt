@@ -1,0 +1,13 @@
+-Não esquecer de colocar switch case
+-Usar o Java swing
+-arrumar tabela relacional do banco de dados
+-Verificador de dados boolean : return(tipododado &&(tipo relacional) outro tipo de dado);
+-para a lista de quadras usar arraylist
+-quando fazer o codigo do banco, não deixar na parte da parte de interface
+dados reserva: 
+-dia 
+-horario inicio/fim
+-objeto de usuraio 
+-objeto de quadro
+-tipos e pisos em enum
+-cpf usuario é string
